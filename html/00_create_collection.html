@@ -1,342 +1,639 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
-  <head>
-    <meta charset="utf-8" />
-<noscript><meta http-equiv="Refresh" content="0; URL=/big_pipe/no-js?destination=/node/add/page" />
-</noscript><meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
-<meta name="MobileOptimized" content="width" />
-<meta name="HandheldFriendly" content="true" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="http://sleeverary.mozo.kr/core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
 
-    <title>일반 페이지 작성 | sleeverary</title>
-    <link rel="stylesheet" href="http://sleeverary.mozo.kr/sites/default/files/css/css_9nFp1HdL1E1wxwpVW4NshcogykvQd3YVUK50CZCiKiQ.css?piheqo" media="all" />
-<link rel="stylesheet" href="http://sleeverary.mozo.kr/sites/default/files/css/css_Va4zLdYXDM0x79wYfYIi_RSorpNS_xtrTcNUqq0psQA.css?piheqo" media="screen" />
-<link rel="stylesheet" href="http://sleeverary.mozo.kr/sites/default/files/css/css_uK_fs8ldPy692YLa9QRDYSV5LbrIMdSudDApxgWbYvw.css?piheqo" media="all" />
-<link rel="stylesheet" href="http://sleeverary.mozo.kr/sites/default/files/css/css_LO2A_9LHOB-I3zauURTrXYRqt4VixEFjuWnd50kQZ5c.css?piheqo" media="all" />
+<head>
+  <meta charset="utf-8" />
+  <noscript>
+    <meta http-equiv="Refresh" content="0; URL=/big_pipe/no-js?destination=/node/add/page" />
+  </noscript>
+  <meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+  <meta name="MobileOptimized" content="width" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="http://sleeverary.mozo.kr/core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+
+  <title>일반 페이지 작성 | sleeverary</title>
+  <link rel="stylesheet" href="http://sleeverary.mozo.kr/sites/default/files/css/css_9nFp1HdL1E1wxwpVW4NshcogykvQd3YVUK50CZCiKiQ.css?piheqo" media="all" />
+  <link rel="stylesheet" href="http://sleeverary.mozo.kr/sites/default/files/css/css_Va4zLdYXDM0x79wYfYIi_RSorpNS_xtrTcNUqq0psQA.css?piheqo" media="screen" />
+  <link rel="stylesheet" href="http://sleeverary.mozo.kr/sites/default/files/css/css_uK_fs8ldPy692YLa9QRDYSV5LbrIMdSudDApxgWbYvw.css?piheqo" media="all" />
+  <link rel="stylesheet" href="http://sleeverary.mozo.kr/sites/default/files/css/css_LO2A_9LHOB-I3zauURTrXYRqt4VixEFjuWnd50kQZ5c.css?piheqo" media="all" />
+  <link rel="stylesheet" href="../css/admin_collection.css" media="all" />
+
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 
 
-<!--[if lte IE 8]>
+  <!--[if lte IE 8]>
 <script src="http://sleeverary.mozo.kr/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
 <![endif]-->
-<script src="http://sleeverary.mozo.kr/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+  <script src="http://sleeverary.mozo.kr/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+  <script src="https://unpkg.com/muuri@0.7.1/dist/muuri.min.js"></script>
+</head>
 
-  </head>
-  <body class="toolbar-tray-open toolbar-horizontal toolbar-fixed toolbar-loading adminimal user-logged-in path-node">
-        <a href="#main-content" class="visually-hidden focusable skip-link">
-      주요 콘텐츠로 건너뛰기
-    </a>
-    <div id="toolbar-administration" role="group" aria-label="Site administration toolbar" class="toolbar">
-  <nav id="toolbar-bar" role="navigation" aria-label="Toolbar items" class="toolbar-bar clearfix">
-    <h2 class="visually-hidden">Toolbar items</h2>
-                <div class="home-toolbar-tab toolbar-tab">
+<body class="toolbar-tray-open toolbar-horizontal toolbar-fixed toolbar-loading adminimal user-logged-in path-node">
+  <a href="#main-content" class="visually-hidden focusable skip-link">
+    주요 콘텐츠로 건너뛰기
+  </a>
+  <div id="toolbar-administration" role="group" aria-label="Site administration toolbar" class="toolbar">
+    <nav id="toolbar-bar" role="navigation" aria-label="Toolbar items" class="toolbar-bar clearfix">
+      <h2 class="visually-hidden">Toolbar items</h2>
+      <div class="home-toolbar-tab toolbar-tab">
         <a href="/" title="Return to site content" class="toolbar-icon toolbar-icon-escape-admin toolbar-item" data-toolbar-escape-admin>Back to site</a>
-        <div><nav class="toolbar-lining clearfix" role="navigation"></nav></div>      </div>
-                <div class="toolbar-tab">
-        <a href="/admin" title="Admin menu" class="toolbar-icon toolbar-icon-menu trigger toolbar-item" data-drupal-subtrees="" id="toolbar-item-administration" data-toolbar-tray="toolbar-item-administration-tray" aria-owns="toolbar-item-administration-tray" role="button" aria-pressed="false">관리</a>
-        <div id="toolbar-item-administration-tray" data-toolbar-tray="toolbar-item-administration-tray" class="toolbar-tray"><nav class="toolbar-lining clearfix" role="navigation" aria-label="관리 메뉴"><h3 class="toolbar-tray-name visually-hidden">관리 메뉴</h3><div class="toolbar-menu-administration"><ul class="toolbar-menu"><li class="menu-item menu-item--collapsed"><a href="/admin/content" title="Find and manage content." id="toolbar-link-system-admin_content" class="toolbar-icon toolbar-icon-system-admin-content" data-drupal-link-system-path="admin/content">Content</a></li><li class="menu-item menu-item--collapsed"><a href="/admin/structure" title="블록, 콘텐츠 타입, 메뉴 등을 관리합니다." id="toolbar-link-system-admin_structure" class="toolbar-icon toolbar-icon-system-admin-structure" data-drupal-link-system-path="admin/structure">구조</a></li><li class="menu-item"><a href="/admin/appearance" title="Select and configure themes." id="toolbar-link-system-themes_page" class="toolbar-icon toolbar-icon-system-themes-page" data-drupal-link-system-path="admin/appearance">모양</a></li><li class="menu-item"><a href="/admin/modules" title="모듈을 추가하고 활성화시켜서 사이트 기능을 확장합니다." id="toolbar-link-system-modules_list" class="toolbar-icon toolbar-icon-system-modules-list" data-drupal-link-system-path="admin/modules">확장</a></li><li class="menu-item menu-item--collapsed"><a href="/admin/config" title="설정을 관리합니다." id="toolbar-link-system-admin_config" class="toolbar-icon toolbar-icon-system-admin-config" data-drupal-link-system-path="admin/config">환경 설정</a></li><li class="menu-item"><a href="/admin/people" title="Manage user accounts, roles, and permissions." id="toolbar-link-entity-user-collection" class="toolbar-icon toolbar-icon-entity-user-collection" data-drupal-link-system-path="admin/people">People</a></li><li class="menu-item menu-item--collapsed"><a href="/admin/reports" title="보고서, 업데이트 내역 및 에러 등을 조회합니다." id="toolbar-link-system-admin_reports" class="toolbar-icon toolbar-icon-system-admin-reports" data-drupal-link-system-path="admin/reports">보고서</a></li><li class="menu-item"><a href="/admin/help" title="사용법, 설정, 모듈 등에 대한 도움말입니다." id="toolbar-link-help-main" class="toolbar-icon toolbar-icon-help-main" data-drupal-link-system-path="admin/help">Help</a></li></ul></div></nav></div>      </div>
-                <div class="toolbar-tab">
-        <a href="/admin/config/user-interface/shortcut" title="바로가기" class="toolbar-icon toolbar-icon-shortcut trigger toolbar-item" id="toolbar-item-shortcuts" data-toolbar-tray="toolbar-item-shortcuts-tray" aria-owns="toolbar-item-shortcuts-tray" role="button" aria-pressed="false">바로가기</a>
-        <div id="toolbar-item-shortcuts-tray" data-toolbar-tray="toolbar-item-shortcuts-tray" class="toolbar-tray"><nav class="toolbar-lining clearfix" role="navigation" aria-label="User-defined shortcuts"><h3 class="toolbar-tray-name visually-hidden">User-defined shortcuts</h3><ul class="toolbar-menu"><li><a href="/node/add">Add content</a></li><li><a href="/admin/content">All content</a></li></ul><a href="/admin/config/user-interface/shortcut/manage/default/customize" class="edit-shortcuts">바로가기 수정하기</a></nav></div>      </div>
-                <div class="hidden contextual-toolbar-tab toolbar-tab">
+        <div>
+          <nav class="toolbar-lining clearfix" role="navigation"></nav>
+        </div>
+      </div>
+      <div class="toolbar-tab">
+        <a href="/admin" title="Admin menu" class="toolbar-icon toolbar-icon-menu trigger toolbar-item" data-drupal-subtrees="" id="toolbar-item-administration" data-toolbar-tray="toolbar-item-administration-tray" aria-owns="toolbar-item-administration-tray"
+          role="button" aria-pressed="false">관리</a>
+        <div id="toolbar-item-administration-tray" data-toolbar-tray="toolbar-item-administration-tray" class="toolbar-tray">
+          <nav class="toolbar-lining clearfix" role="navigation" aria-label="관리 메뉴">
+            <h3 class="toolbar-tray-name visually-hidden">관리 메뉴</h3>
+            <div class="toolbar-menu-administration">
+              <ul class="toolbar-menu">
+                <li class="menu-item menu-item--collapsed"><a href="/admin/content" title="Find and manage content." id="toolbar-link-system-admin_content" class="toolbar-icon toolbar-icon-system-admin-content" data-drupal-link-system-path="admin/content">Content</a></li>
+                <li class="menu-item menu-item--collapsed"><a href="/admin/structure" title="블록, 콘텐츠 타입, 메뉴 등을 관리합니다." id="toolbar-link-system-admin_structure" class="toolbar-icon toolbar-icon-system-admin-structure" data-drupal-link-system-path="admin/structure">구조</a></li>
+                <li class="menu-item"><a href="/admin/appearance" title="Select and configure themes." id="toolbar-link-system-themes_page" class="toolbar-icon toolbar-icon-system-themes-page" data-drupal-link-system-path="admin/appearance">모양</a></li>
+                <li class="menu-item"><a href="/admin/modules" title="모듈을 추가하고 활성화시켜서 사이트 기능을 확장합니다." id="toolbar-link-system-modules_list" class="toolbar-icon toolbar-icon-system-modules-list" data-drupal-link-system-path="admin/modules">확장</a></li>
+                <li class="menu-item menu-item--collapsed"><a href="/admin/config" title="설정을 관리합니다." id="toolbar-link-system-admin_config" class="toolbar-icon toolbar-icon-system-admin-config" data-drupal-link-system-path="admin/config">환경 설정</a></li>
+                <li class="menu-item"><a href="/admin/people" title="Manage user accounts, roles, and permissions." id="toolbar-link-entity-user-collection" class="toolbar-icon toolbar-icon-entity-user-collection" data-drupal-link-system-path="admin/people">People</a></li>
+                <li class="menu-item menu-item--collapsed"><a href="/admin/reports" title="보고서, 업데이트 내역 및 에러 등을 조회합니다." id="toolbar-link-system-admin_reports" class="toolbar-icon toolbar-icon-system-admin-reports" data-drupal-link-system-path="admin/reports">보고서</a></li>
+                <li class="menu-item"><a href="/admin/help" title="사용법, 설정, 모듈 등에 대한 도움말입니다." id="toolbar-link-help-main" class="toolbar-icon toolbar-icon-help-main" data-drupal-link-system-path="admin/help">Help</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="toolbar-tab">
+        <a href="/admin/config/user-interface/shortcut" title="바로가기" class="toolbar-icon toolbar-icon-shortcut trigger toolbar-item" id="toolbar-item-shortcuts" data-toolbar-tray="toolbar-item-shortcuts-tray" aria-owns="toolbar-item-shortcuts-tray"
+          role="button" aria-pressed="false">바로가기</a>
+        <div id="toolbar-item-shortcuts-tray" data-toolbar-tray="toolbar-item-shortcuts-tray" class="toolbar-tray">
+          <nav class="toolbar-lining clearfix" role="navigation" aria-label="User-defined shortcuts">
+            <h3 class="toolbar-tray-name visually-hidden">User-defined shortcuts</h3>
+            <ul class="toolbar-menu">
+              <li><a href="/node/add">Add content</a></li>
+              <li><a href="/admin/content">All content</a></li>
+            </ul><a href="/admin/config/user-interface/shortcut/manage/default/customize" class="edit-shortcuts">바로가기 수정하기</a>
+          </nav>
+        </div>
+      </div>
+      <div class="hidden contextual-toolbar-tab toolbar-tab">
         <button class="toolbar-icon toolbar-icon-edit toolbar-item" aria-pressed="false" type="button">수정하기</button>
 
-        <div><nav class="toolbar-lining clearfix" role="navigation"></nav></div>      </div>
-                <div class="tour-toolbar-tab hidden toolbar-tab" id="toolbar-tab-tour">
+        <div>
+          <nav class="toolbar-lining clearfix" role="navigation"></nav>
+        </div>
+      </div>
+      <div class="tour-toolbar-tab hidden toolbar-tab" id="toolbar-tab-tour">
         <button class="toolbar-icon toolbar-icon-help toolbar-item" aria-pressed="false" type="button">Tour</button>
 
-        <div><nav class="toolbar-lining clearfix" role="navigation"></nav></div>      </div>
-                <div class="toolbar-tab">
-        <a href="/user" title="내 계정" class="toolbar-icon toolbar-icon-user trigger toolbar-item" id="toolbar-item-user" data-toolbar-tray="toolbar-item-user-tray" aria-owns="toolbar-item-user-tray" role="button" aria-pressed="false"><span data-big-pipe-placeholder-id="callback=user.toolbar_link_builder%3ArenderDisplayName&amp;&amp;token=-MH2NzEnTzbzMk0ZGfGgoiw7G3j_-Q1ILWBRVhIOKLI"></span></a>
-        <div id="toolbar-item-user-tray" data-toolbar-tray="toolbar-item-user-tray" class="toolbar-tray"><nav class="toolbar-lining clearfix" role="navigation" aria-label="User account actions"><h3 class="toolbar-tray-name visually-hidden">User account actions</h3><span data-big-pipe-placeholder-id="callback=user.toolbar_link_builder%3ArenderToolbarLinks&amp;&amp;token=xssKdKFVFD7N0FUPPcC1C7LrqMHpQFVzUhrI4cOeEgs"></span></nav></div>      </div>
-      </nav>
+        <div>
+          <nav class="toolbar-lining clearfix" role="navigation"></nav>
+        </div>
+      </div>
+      <div class="toolbar-tab">
+        <a href="/user" title="내 계정" class="toolbar-icon toolbar-icon-user trigger toolbar-item" id="toolbar-item-user" data-toolbar-tray="toolbar-item-user-tray" aria-owns="toolbar-item-user-tray" role="button" aria-pressed="false"><span
+            data-big-pipe-placeholder-id="callback=user.toolbar_link_builder%3ArenderDisplayName&amp;&amp;token=-MH2NzEnTzbzMk0ZGfGgoiw7G3j_-Q1ILWBRVhIOKLI"></span></a>
+        <div id="toolbar-item-user-tray" data-toolbar-tray="toolbar-item-user-tray" class="toolbar-tray">
+          <nav class="toolbar-lining clearfix" role="navigation" aria-label="User account actions">
+            <h3 class="toolbar-tray-name visually-hidden">User account actions</h3><span data-big-pipe-placeholder-id="callback=user.toolbar_link_builder%3ArenderToolbarLinks&amp;&amp;token=xssKdKFVFD7N0FUPPcC1C7LrqMHpQFVzUhrI4cOeEgs"></span>
+          </nav>
+        </div>
+      </div>
+    </nav>
 
-</div>
+  </div>
 
-      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
-      <header class="content-header clearfix">
-    <div class="layout-container">
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <header class="content-header clearfix">
+      <div class="layout-container">
         <div class="region region-header">
-    <div id="block-adminimal-theme-page-title" class="block block-core block-page-title-block">
+          <div id="block-adminimal-theme-page-title" class="block block-core block-page-title-block">
 
 
 
-  <h1 class="js-quickedit-page-title page-title">일반 페이지 작성</h1>
+            <h1 class="js-quickedit-page-title page-title">컬렉션 등록</h1>
 
 
-  </div>
+          </div>
 
-  </div>
+        </div>
 
-    </div>
-  </header>
+      </div>
+    </header>
 
-  <div class="layout-container">
+    <div class="layout-container">
 
       <div class="region region-breadcrumb">
-    <div id="block-adminimal-theme-breadcrumbs" class="block block-system block-system-breadcrumb-block">
+        <div id="block-adminimal-theme-breadcrumbs" class="block block-system block-system-breadcrumb-block">
 
 
-        <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
-    <h2 id="system-breadcrumb" class="visually-hidden">이동 경로</h2>
-    <ol>
-          <li>
-                  <a href="/">홈</a>
+          <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+            <h2 id="system-breadcrumb" class="visually-hidden">이동 경로</h2>
+            <ol>
+              <li>
+                <a href="/">홈</a>
               </li>
-          <li>
-                  <a href="/node/add">콘텐츠 추가하기</a>
+              <li>
+                <a href="/node/add">컬렉션 등록</a>
               </li>
-        </ol>
-  </nav>
+            </ol>
+          </nav>
 
-  </div>
+        </div>
 
-  </div>
+      </div>
 
-    <main class="page-content clearfix" role="main">
-      <div class="visually-hidden"><a id="main-content" tabindex="-1"></a></div>
+      <main class="page-content clearfix" role="main">
+        <div class="visually-hidden"><a id="main-content" tabindex="-1"></a></div>
         <div class="region region-highlighted">
-    <span data-big-pipe-placeholder-id="callback=Drupal%5CCore%5CRender%5CElement%5CStatusMessages%3A%3ArenderMessages&amp;args%5B0%5D&amp;token=_HAdUpwWmet0TOTe2PSiJuMntExoshbm1kh2wQzzzAA"></span>
-
-  </div>
-
-              <div class="help">
-
-        </div>
-              <div class="region region-content">
-    <div id="block-adminimal-theme-content" class="block block-system block-system-main-block">
-
-
-      <form class="node-page-form node-form" data-drupal-selector="node-page-form" action="/node/add/page" method="post" id="node-page-form" accept-charset="UTF-8">
-  <div class="layout-node-form clearfix">
-  <div class="layout-region layout-region-node-main">
-    <div class="field--type-string field--name-title field--widget-string-textfield js-form-wrapper form-wrapper" data-drupal-selector="edit-title-wrapper" id="edit-title-wrapper">      <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-title-0-value form-item-title-0-value">
-      <label for="edit-title-0-value" class="js-form-required form-required">Title</label>
-        <input class="js-text-full text-full form-text required" data-drupal-selector="edit-title-0-value" type="text" id="edit-title-0-value" name="title[0][value]" value="" size="60" maxlength="255" placeholder="" required="required" aria-required="true" />
+          <span data-big-pipe-placeholder-id="callback=Drupal%5CCore%5CRender%5CElement%5CStatusMessages%3A%3ArenderMessages&amp;args%5B0%5D&amp;token=_HAdUpwWmet0TOTe2PSiJuMntExoshbm1kh2wQzzzAA"></span>
 
         </div>
 
-  </div>
-<input data-drupal-selector="edit-changed" type="hidden" name="changed" value="1542764825" />
-<input autocomplete="off" data-drupal-selector="form-grd23msi5faia4ygcqrzjxg-wbcpggd5lvn5vgxdnuo" type="hidden" name="form_build_id" value="form-grd23msI5faIa4YGcQrZjXg_WBcPggd5lvn5vgxdNuo" />
-<input data-drupal-selector="edit-node-page-form-form-token" type="hidden" name="form_token" value="BwHvVm3kVGwqLx0nlfRloyRBP5CFizExRVvGH17i3Cg" />
-<input data-drupal-selector="edit-node-page-form" type="hidden" name="form_id" value="node_page_form" />
-<div class="field--type-path field--name-path field--widget-path js-form-wrapper form-wrapper" data-drupal-selector="edit-path-wrapper" id="edit-path-wrapper">
-  </div>
-<div class="field--type-text-with-summary field--name-body field--widget-text-textarea-with-summary js-form-wrapper form-wrapper" data-drupal-selector="edit-body-wrapper" id="edit-body-wrapper">      <div class="js-text-format-wrapper text-format-wrapper js-form-item form-item">
-  <div class="js-text-summary-wrapper text-summary-wrapper"><div class="js-form-item form-item js-form-type-textarea form-type-textarea js-form-item-body-0-summary form-item-body-0-summary">
-      <label for="edit-body-0-summary">요약</label>
-        <div class="form-textarea-wrapper">
-  <textarea class="js-text-summary text-summary form-textarea resize-vertical" data-drupal-selector="edit-body-0-summary" aria-describedby="edit-body-0-summary--description" id="edit-body-0-summary" name="body[0][summary]" rows="3" cols="60"></textarea>
-</div>
-
-            <div id="edit-body-0-summary--description" class="description">
-      빈 칸으로 남겨두면 전문 텍스트에 대한 축약본을 요약글로 사용합니다.
-    </div>
-  </div>
-</div><div class="js-form-item form-item js-form-type-textarea form-type-textarea js-form-item-body-0-value form-item-body-0-value">
-      <label for="edit-body-0-value">본문</label>
-        <div class="form-textarea-wrapper">
-  <textarea class="js-text-full text-full form-textarea resize-vertical" data-drupal-selector="edit-body-0-value" id="edit-body-0-value" name="body[0][value]" rows="9" cols="60" placeholder=""></textarea>
-</div>
+        <div class="help">
 
         </div>
-<div class="filter-wrapper js-form-wrapper form-wrapper" data-drupal-selector="edit-body-0-format" id="edit-body-0-format"><div class="filter-help js-form-wrapper form-wrapper" data-drupal-selector="edit-body-0-format-help" id="edit-body-0-format-help"><a href="/filter/tips" target="_blank" data-drupal-selector="edit-body-0-format-help-about" id="edit-body-0-format-help-about">About text formats</a></div>
-<div class="js-form-item form-item js-form-type-select form-type-select js-form-item-body-0-format form-item-body-0-format">
-      <label for="edit-body-0-format--2">텍스트 양식</label>
-        <select class="filter-list editor form-select" data-drupal-selector="edit-body-0-format" data-editor-for="edit-body-0-value" id="edit-body-0-format--2" name="body[0][format]"><option value="basic_html" selected="selected">Basic HTML</option><option value="restricted_html">Restricted HTML</option><option value="full_html">Full HTML</option></select>
+        <div class="region region-content">
+          <div id="block-adminimal-theme-content" class="block block-system block-system-main-block">
+
+
+
+
+
+        <!--    컬렉션 등록  -->
+
+
+
+            <form class="node-page-form node-form" data-drupal-selector="node-page-form" action="/node/add/page" method="post" id="node-page-form" accept-charset="UTF-8">
+              <div class="layout-node-form clearfix">
+                <div class="layout-region layout-region-node-main">
+                  <div class="field--type-string field--name-title field--widget-string-textfield js-form-wrapper form-wrapper" data-drupal-selector="edit-title-wrapper" id="edit-title-wrapper">
+                    <!--    제목 시작 -->
+                    <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-title-0-value form-item-title-0-value">
+                      <label for="edit-title-0-value" class="js-form-required form-required">컬랙션 제목</label>
+                      <input class="js-text-full text-full form-text required" data-drupal-selector="edit-title-0-value" type="text" id="edit-title-0-value" name="title[0][value]" value="" size="60" maxlength="255" placeholder="" required="required"
+                        aria-required="true" />
+                    </div>
+                    <!--    제목 끝 -->
+                  </div>
+                  <input data-drupal-selector="edit-changed" type="hidden" name="changed" value="1542764825" />
+                  <input autocomplete="off" data-drupal-selector="form-grd23msi5faia4ygcqrzjxg-wbcpggd5lvn5vgxdnuo" type="hidden" name="form_build_id" value="form-grd23msI5faIa4YGcQrZjXg_WBcPggd5lvn5vgxdNuo" />
+                  <input data-drupal-selector="edit-node-page-form-form-token" type="hidden" name="form_token" value="BwHvVm3kVGwqLx0nlfRloyRBP5CFizExRVvGH17i3Cg" />
+                  <input data-drupal-selector="edit-node-page-form" type="hidden" name="form_id" value="node_page_form" />
+                  <div class="field--type-path field--name-path field--widget-path js-form-wrapper form-wrapper" data-drupal-selector="edit-path-wrapper" id="edit-path-wrapper">
+                  </div>
+
+
+
+
+                  <!--    콜렉션 시작 -->
+                  <div class="field--type-text-with-summary field--name-body field--widget-text-textarea-with-summary js-form-wrapper form-wrapper collection-wrapper" data-drupal-selector="edit-body-wrapper" id="edit-body-wrapper">
+                    <!--    섹션 시작 -->
+                    <div class="field--section-unit field--section-unit-0 on-focus">
+                      <dl class="section_title">
+                        <dt>섹션</dt>
+                        <dd>컬렉션 내에 주요한 영역을 나눕니다.</dd>
+                      </dl>
+                      <a class="close-section"><i class="xi-close"></i></a>
+                     <!--    제목 시작 -->
+                      <div class="section-title-area">
+                        <label for="" class="js-form-required form-required">섹션제목</label>
+                        <input class="js-text-full text-full form-text required" type="text" value="" maxlength="255" placeholder="섹션제목" required="required"
+                          aria-required="true" />
+                      </div>
+                      <!--    제목 끝 -->
+                      <!--    section-wrapper 시작 -->
+                      <div class="section-wrapper grid">
+                        <!--    
+                        <div class="form-item">
+                          <div class="item-content">
+                            <label for="">본문</label>
+                            <div class="form-textarea-wrapper">
+                              <textarea class="js-text-full text-full form-textarea resize-vertical" rows="9" cols="60" placeholder="설명"></textarea>
+                            </div>
+                          </div>
+                          <div class="item-control">
+                            <a href="#" class="item-move"><i class="xi-arrows"></i></a>
+                            <a href="#" class="item-remove"><i class="xi-close"></i></a>
+                          </div>
+                        </div>
+                        <div class="form-item">
+                          <div class="item-content">
+                            <label for="" class="js-form-required form-required">Title</label>
+                            <input class="js-text-full text-full form-text required" type="text" value="" maxlength="255" placeholder="소제목" required="required"
+                              aria-required="true" />
+                          </div>
+                          <div class="item-control">
+                            <a href="#" class="item-move"><i class="xi-arrows"></i></a>
+                            <a href="#" class="item-remove"><i class="xi-close"></i></a>
+                          </div>
+                        </div>
+                        -->
+                      </div>
+                      <!--    section-wrapper 끝 -->
+                    </div>
+                    <!--    섹션 끝 -->
+                    <!--    섹션 추가 시작 -->
+                    <div class="field--section-unit add--section-unit">
+                      <dl class="section_title">
+                        <dt>섹션</dt>
+                        <dd>컬렉션 내에 주요한 영역을 나눕니다.</dd>
+                      </dl>
+                      <button type="button" class="button">추가하기</button>
+                    </div>
+                    <!--    섹션 추가 끝 -->
+                  </div>
+                  <!--    콜렉션 section -->
+                </div>
+                <div class="layout-region layout-region-node-secondary">
+                  <div class="entity-meta js-form-wrapper form-wrapper item-palette">
+                    <h3>요소그룹1</h3>
+                    <div class="entity-meta__header js-form-wrapper form-wrapper">
+                      <div class="item-palette-one">
+                        <button type="button" class="add-item button">설명 추가</button>
+                        <div class="item-garage">
+                          <div class="item-content">
+                            <label for="">본문</label>
+                            <div class="form-textarea-wrapper">
+                              <textarea class="js-text-full text-full form-textarea resize-vertical" rows="9" cols="60" placeholder="설명"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-palette-one">
+                        <button type="button" class="add-item button">소제목 추가</button>
+                        <div class="item-garage">
+                          <div class="item-content">
+                            <label for="" class="js-form-required form-required">Title</label>
+                            <input class="js-text-full text-full form-text required" type="text" value="" maxlength="255" placeholder="소제목" required="required"
+                              aria-required="true" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- 폼 푸터 시작 -->
+                <div class="layout-region layout-region-node-footer">
+                  <div class="layout-region-node-footer__content">
+                    <div class="entity-content-form-footer js-form-wrapper form-wrapper" data-drupal-selector="edit-footer" id="edit-footer">
+                      <div class="field--type-boolean field--name-status field--widget-boolean-checkbox js-form-wrapper form-wrapper" data-drupal-selector="edit-status-wrapper" id="edit-status-wrapper">
+                        <div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-status-value form-item-status-value">
+                          <input data-drupal-selector="edit-status-value" type="checkbox" id="edit-status-value" name="status[value]" value="1" checked="checked" class="form-checkbox" />
+
+                          <label for="edit-status-value" class="option">Published</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="저장" class="button button--primary js-form-submit form-submit" />
+                      <input data-drupal-selector="edit-preview" type="submit" id="edit-preview" name="op" value="Preview" class="button js-form-submit form-submit" />
+                    </div>
+
+                  </div>
+                </div>
+                <!-- 폼 푸터 끝 -->
+              </div>
+
+            </form>
+
+
+
+            <!--    컬렉션 등록 끝 -->
+
+
+
+
+
+
+
+
+          </div>
+
         </div>
-<div class="filter-guidelines js-form-wrapper form-wrapper" data-drupal-selector="edit-body-0-format-guidelines" id="edit-body-0-format-guidelines"><div class="filter-guidelines-item filter-guidelines-restricted_html">
-  <h4 class="label">Restricted HTML</h4>
 
-
-
-          <ul class="tips">
-                      <li>사용할 수 있는 HTML 태그: &lt;a href hreflang&gt; &lt;em&gt; &lt;strong&gt; &lt;cite&gt; &lt;blockquote cite&gt; &lt;code&gt; &lt;ul type&gt; &lt;ol start type&gt; &lt;li&gt; &lt;dl&gt; &lt;dt&gt; &lt;dd&gt; &lt;h2 id&gt; &lt;h3 id&gt; &lt;h4 id&gt; &lt;h5 id&gt; &lt;h6 id&gt;</li>
-                      <li>줄과 단락은 자동으로 분리됩니다.</li>
-                      <li>Web page addresses and email addresses turn into links automatically.</li>
-            </ul>
-
-
-
-</div>
-</div>
-</div>
-
-  </div>
-
-  </div>
-
-  </div>
-  <div class="layout-region layout-region-node-secondary">
-    <div class="entity-meta js-form-wrapper form-wrapper" data-drupal-selector="edit-advanced" id="edit-advanced"><div class="entity-meta__header js-form-wrapper form-wrapper" data-drupal-selector="edit-meta" id="edit-meta"><div class="entity-meta__last-saved container-inline js-form-item form-item js-form-type-item form-type-item js-form-item-meta-changed form-item-meta-changed" id="edit-meta-changed">
-      <label for="edit-meta-changed">Last saved</label>
-        Not saved yet
-        </div>
-<div class="entity-meta__author container-inline js-form-item form-item js-form-type-item form-type-item js-form-item-meta-author form-item-meta-author" id="edit-meta-author">
-      <label for="edit-meta-author">Author</label>
-        builder
-        </div>
-<div class="entity-content-form-revision-information js-form-wrapper form-wrapper" data-drupal-selector="edit-revision-information" id="edit-revision-information"><div class="field--type-string-long field--name-revision-log field--widget-string-textarea js-form-wrapper form-wrapper" data-drupal-selector="edit-revision-log-wrapper" data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022revision\u0022]&quot;:{&quot;checked&quot;:true}}}" id="edit-revision-log-wrapper">      <div class="js-form-item form-item js-form-type-textarea form-type-textarea js-form-item-revision-log-0-value form-item-revision-log-0-value">
-      <label for="edit-revision-log-0-value">수정본 로그 메시지</label>
-        <div class="form-textarea-wrapper">
-  <textarea class="js-text-full text-full form-textarea resize-vertical" data-drupal-selector="edit-revision-log-0-value" aria-describedby="edit-revision-log-0-value--description" id="edit-revision-log-0-value" name="revision_log[0][value]" rows="4" cols="60" placeholder=""></textarea>
-</div>
-
-            <div id="edit-revision-log-0-value--description" class="description">
-      Briefly describe the changes you have made.
-    </div>
-  </div>
-
-  </div>
-</div>
-</div>
-<details class="menu-link-form js-form-wrapper form-wrapper seven-details" data-drupal-selector="edit-menu" id="edit-menu">    <summary role="button" aria-controls="edit-menu" aria-expanded="false" aria-pressed="false" class="seven-details__summary">메뉴 설정</summary><div class="seven-details__wrapper details-wrapper">
-    <div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-menu-enabled form-item-menu-enabled">
-        <input data-drupal-selector="edit-menu-enabled" type="checkbox" id="edit-menu-enabled" name="menu[enabled]" value="1" class="form-checkbox" />
-
-        <label for="edit-menu-enabled" class="option">메뉴 링크를 제공합니다.</label>
-      </div>
-<div data-drupal-selector="edit-menu" data-drupal-states="{&quot;invisible&quot;:{&quot;input[name=\u0022menu[enabled]\u0022]&quot;:{&quot;checked&quot;:false}}}" id="edit-menu--2" class="js-form-wrapper form-wrapper"><div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-menu-title form-item-menu-title">
-      <label for="edit-menu-title">메뉴 링크 제목</label>
-        <input data-drupal-selector="edit-menu-title" type="text" id="edit-menu-title" name="menu[title]" value="" size="60" maxlength="255" class="form-text" />
-
-        </div>
-<div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-menu-description form-item-menu-description">
-      <label for="edit-menu-description">설명</label>
-        <input data-drupal-selector="edit-menu-description" aria-describedby="edit-menu-description--description" type="text" id="edit-menu-description" name="menu[description]" value="" size="60" maxlength="255" class="form-text" />
-
-            <div id="edit-menu-description--description" class="description">
-      메뉴 링크 위에 마우스가 올라갔을 때 나타납니다.
-    </div>
-  </div>
-<div class="js-form-item form-item js-form-type-select form-type-select js-form-item-menu-menu-parent form-item-menu-menu-parent">
-      <label for="edit-menu-menu-parent">상위 항목</label>
-        <select class="menu-parent-select form-select" data-drupal-selector="edit-menu-menu-parent" id="edit-menu-menu-parent" name="menu[menu_parent]"><option value="main:" selected="selected">&lt;Main navigation&gt;</option><option value="main:standard.front_page">-- 홈</option></select>
-        </div>
-<div class="js-form-item form-item js-form-type-number form-type-number js-form-item-menu-weight form-item-menu-weight">
-      <label for="edit-menu-weight">무게</label>
-        <input data-drupal-selector="edit-menu-weight" aria-describedby="edit-menu-weight--description" type="number" id="edit-menu-weight" name="menu[weight]" value="0" step="1" class="form-number" />
-
-            <div id="edit-menu-weight--description" class="description">
-      Menu links with lower weights are displayed before links with higher weights.
-    </div>
-  </div>
-</div>
-</div>
-</details>
-<details class="path-form js-form-wrapper form-wrapper seven-details" data-drupal-selector="edit-path-0" id="edit-path-0">    <summary role="button" aria-controls="edit-path-0" aria-expanded="false" aria-pressed="false" class="seven-details__summary">URL 별명</summary><div class="seven-details__wrapper details-wrapper">
-    <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-path-0-alias form-item-path-0-alias">
-      <label for="edit-path-0-alias">URL 별명</label>
-        <input data-drupal-selector="edit-path-0-alias" aria-describedby="edit-path-0-alias--description" type="text" id="edit-path-0-alias" name="path[0][alias]" value="" size="60" maxlength="255" class="form-text" />
-
-            <div id="edit-path-0-alias--description" class="description">
-      Specify an alternative path by which this data can be accessed. For example, type "/about" when writing an about page.
-    </div>
-  </div>
-</div>
-</details>
-<details class="node-form-author js-form-wrapper form-wrapper seven-details" data-drupal-selector="edit-author" id="edit-author">    <summary role="button" aria-controls="edit-author" aria-expanded="false" aria-pressed="false" class="seven-details__summary">글쓰기 정보</summary><div class="seven-details__wrapper details-wrapper">
-    <div class="field--type-entity-reference field--name-uid field--widget-entity-reference-autocomplete js-form-wrapper form-wrapper" data-drupal-selector="edit-uid-wrapper" id="edit-uid-wrapper">      <div class="js-form-item form-item js-form-type-entity-autocomplete form-type-entity-autocomplete js-form-item-uid-0-target-id form-item-uid-0-target-id">
-      <label for="edit-uid-0-target-id">글쓴이</label>
-        <input data-drupal-selector="edit-uid-0-target-id" aria-describedby="edit-uid-0-target-id--description" class="form-autocomplete form-text" data-autocomplete-path="/entity_reference_autocomplete/user/default/LZlhu1-afM4pp9gNdwczYiOMDy7m35Wx-5i_sHZcEAo" type="text" id="edit-uid-0-target-id" name="uid[0][target_id]" value="builder (1)" size="60" maxlength="1024" placeholder="" />
-
-            <div id="edit-uid-0-target-id--description" class="description">
-      The username of the content author.
-    </div>
-  </div>
-
-  </div>
-<div class="field--type-created field--name-created field--widget-datetime-timestamp js-form-wrapper form-wrapper" data-drupal-selector="edit-created-wrapper" id="edit-created-wrapper">        <h4 class="label">시각</h4>
-<div id="edit-created-0-value" class="container-inline">
-  <div class="js-form-item form-item js-form-type-date form-type-date js-form-item-created-0-value-date form-item-created-0-value-date form-no-label">
-      <label for="edit-created-0-value-date" class="visually-hidden">Date</label>
-        <input data-drupal-selector="edit-created-0-value-date" aria-describedby="edit-created-0-value--description" title="Date (e.g. 2018-11-21)" type="date" min="1902-01-01" max="2037-12-31" data-drupal-date-format="Y-m-d" id="edit-created-0-value-date" name="created[0][value][date]" value="2018-11-21" size="12" class="form-date" />
-
-        </div>
-<div class="js-form-item form-item js-form-type-date form-type-date js-form-item-created-0-value-time form-item-created-0-value-time form-no-label">
-      <label for="edit-created-0-value-time" class="visually-hidden">시간</label>
-        <input data-drupal-selector="edit-created-0-value-time" aria-describedby="edit-created-0-value--description" title="Time (e.g. 10:47:05)" type="time" step="1" id="edit-created-0-value-time" name="created[0][value][time]" value="10:47:05" size="12" class="form-time" />
-
-        </div>
-
-</div>
-
-  <div id="edit-created-0-value--description" class="description">
-    Format: <em class="placeholder">2018-11-21 10:47:05</em>. Leave blank to use the time of form submission.
-  </div>
-
-  </div>
-</div>
-</details>
-<details class="node-form-options js-form-wrapper form-wrapper seven-details" data-drupal-selector="edit-options" id="edit-options">    <summary role="button" aria-controls="edit-options" aria-expanded="false" aria-pressed="false" class="seven-details__summary">Promotion options</summary><div class="seven-details__wrapper details-wrapper">
-    <div class="field--type-boolean field--name-promote field--widget-boolean-checkbox js-form-wrapper form-wrapper" data-drupal-selector="edit-promote-wrapper" id="edit-promote-wrapper"><div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-promote-value form-item-promote-value">
-        <input data-drupal-selector="edit-promote-value" type="checkbox" id="edit-promote-value" name="promote[value]" value="1" class="form-checkbox" />
-
-        <label for="edit-promote-value" class="option">첫 페이지에 홍보하기</label>
-      </div>
-</div>
-<div class="field--type-boolean field--name-sticky field--widget-boolean-checkbox js-form-wrapper form-wrapper" data-drupal-selector="edit-sticky-wrapper" id="edit-sticky-wrapper"><div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-sticky-value form-item-sticky-value">
-        <input data-drupal-selector="edit-sticky-value" type="checkbox" id="edit-sticky-value" name="sticky[value]" value="1" class="form-checkbox" />
-
-        <label for="edit-sticky-value" class="option">목록 맨 위에 고정하기</label>
-      </div>
-</div>
-</div>
-</details>
-</div>
-
-  </div>
-  <div class="layout-region layout-region-node-footer">
-    <div class="layout-region-node-footer__content">
-      <div class="entity-content-form-footer js-form-wrapper form-wrapper" data-drupal-selector="edit-footer" id="edit-footer"><div class="field--type-boolean field--name-status field--widget-boolean-checkbox js-form-wrapper form-wrapper" data-drupal-selector="edit-status-wrapper" id="edit-status-wrapper"><div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-status-value form-item-status-value">
-        <input data-drupal-selector="edit-status-value" type="checkbox" id="edit-status-value" name="status[value]" value="1" checked="checked" class="form-checkbox" />
-
-        <label for="edit-status-value" class="option">Published</label>
-      </div>
-</div>
-</div>
-
-      <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="저장" class="button button--primary js-form-submit form-submit" />
-<input data-drupal-selector="edit-preview" type="submit" id="edit-preview" name="op" value="Preview" class="button js-form-submit form-submit" />
-</div>
+      </main>
 
     </div>
-  </div>
-</div>
-
-</form>
-
-  </div>
-
-  </div>
-
-    </main>
-
-  </div>
 
   </div>
 
 
 
-  <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/add\/page","currentPathIsAdmin":true,"isFront":false,"currentLanguage":"ko"},"pluralDelimiter":"\u0003","ajaxPageState":{"libraries":"adminimal_theme\/global-styling,big_pipe\/big_pipe,ckeditor\/drupal.ckeditor,ckeditor\/drupal.ckeditor.plugins.drupalimagecaption,classy\/base,classy\/messages,contextual\/drupal.contextual-links,contextual\/drupal.contextual-toolbar,core\/drupal.active-link,core\/drupal.autocomplete,core\/drupal.collapse,core\/drupal.date,core\/drupal.states,core\/html5shiv,core\/normalize,filter\/drupal.filter,menu_ui\/drupal.menu_ui,node\/drupal.node,path\/drupal.path,seven\/global-styling,seven\/node-form,shortcut\/drupal.shortcut,text\/drupal.text,toolbar\/toolbar,toolbar\/toolbar.escapeAdmin,tour\/tour,user\/drupal.user.icons","theme":"adminimal_theme","theme_token":"WjwquaFfS4KR_nphAsevDWOa6qqKTWJGVZcSSK581A0"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"jquery":{"ui":{"datepicker":{"isRTL":false,"firstDay":0}}},"ckeditor":{"timestamp":"piheqo"},"bigPipePlaceholderIds":{"callback=Drupal%5CCore%5CRender%5CElement%5CStatusMessages%3A%3ArenderMessages\u0026args%5B0%5D\u0026token=_HAdUpwWmet0TOTe2PSiJuMntExoshbm1kh2wQzzzAA":true,"callback=user.toolbar_link_builder%3ArenderToolbarLinks\u0026\u0026token=xssKdKFVFD7N0FUPPcC1C7LrqMHpQFVzUhrI4cOeEgs":true,"callback=user.toolbar_link_builder%3ArenderDisplayName\u0026\u0026token=-MH2NzEnTzbzMk0ZGfGgoiw7G3j_-Q1ILWBRVhIOKLI":true},"editor":{"formats":{"basic_html":{"format":"basic_html","editor":"ckeditor","editorSettings":{"allowedContent":{"*":{"attributes":"lang,dir","styles":false,"classes":false},"a":{"attributes":"href,hreflang","styles":false,"classes":false},"blockquote":{"attributes":"cite","styles":false,"classes":false},"br":{"attributes":false,"styles":false,"classes":false},"cite":{"attributes":false,"styles":false,"classes":false},"code":{"attributes":false,"styles":false,"classes":false},"dd":{"attributes":false,"styles":false,"classes":false},"dl":{"attributes":false,"styles":false,"classes":false},"dt":{"attributes":false,"styles":false,"classes":false},"em":{"attributes":false,"styles":false,"classes":false},"h2":{"attributes":"id","styles":false,"classes":false},"h3":{"attributes":"id","styles":false,"classes":false},"h4":{"attributes":"id","styles":false,"classes":false},"h5":{"attributes":"id","styles":false,"classes":false},"h6":{"attributes":"id","styles":false,"classes":false},"img":{"attributes":"src,alt,height,width,data-entity-type,data-entity-uuid,data-align,data-caption","styles":false,"classes":false},"li":{"attributes":false,"styles":false,"classes":false},"ol":{"attributes":"start,type","styles":false,"classes":false},"p":{"attributes":false,"styles":false,"classes":false},"span":{"attributes":false,"styles":false,"classes":false},"strong":{"attributes":false,"styles":false,"classes":false},"ul":{"attributes":"type","styles":false,"classes":false}},"contentsCss":["http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/css\/ckeditor-iframe.css","http:\/\/sleeverary.mozo.kr\/core\/modules\/system\/css\/components\/align.module.css","http:\/\/sleeverary.mozo.kr\/core\/modules\/filter\/css\/filter.caption.css","http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/css\/plugins\/drupalimagecaption\/ckeditor.drupalimagecaption.css","http:\/\/sleeverary.mozo.kr\/core\/themes\/bartik\/css\/base\/elements.css","http:\/\/sleeverary.mozo.kr\/core\/themes\/bartik\/css\/components\/captions.css","http:\/\/sleeverary.mozo.kr\/core\/themes\/bartik\/css\/components\/table.css","http:\/\/sleeverary.mozo.kr\/core\/themes\/bartik\/css\/components\/text-formatted.css"],"customConfig":"","disableNativeSpellChecker":false,"disallowedContent":{"*":{"attributes":"on*"}},"drupalExternalPlugins":{"drupalimage":"http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/js\/plugins\/drupalimage\/plugin.js","drupalimagecaption":"http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/js\/plugins\/drupalimagecaption\/plugin.js","drupallink":"http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/js\/plugins\/drupallink\/plugin.js"},"drupalImageCaption_alignFilterEnabled":true,"drupalImageCaption_captionFilterEnabled":true,"drupalImageCaption_captionPlaceholderText":"Enter caption here","drupalImage_dialogTitleAdd":"Insert Image","drupalImage_dialogTitleEdit":"Edit Image","drupalLink_dialogTitleAdd":"Add Link","drupalLink_dialogTitleEdit":"Edit Link","entities":false,"extraPlugins":"drupalimage,drupalimagecaption,drupallink","format_tags":"p;h2;h3;h4;h5;h6","image2_alignClasses":["align-left","align-center","align-right"],"image2_captionedClass":"caption caption-img","justifyClasses":["text-align-left","text-align-center","text-align-right","text-align-justify"],"language":"ko","pasteFromWordPromptCleanup":true,"resize_dir":"vertical","stylesSet":false,"toolbar":[{"name":"Formatting","items":["Bold","Italic"]},{"name":"Linking","items":["DrupalLink","DrupalUnlink"]},{"name":"Lists","items":["BulletedList","NumberedList"]},{"name":"Media","items":["Blockquote","DrupalImage"]},{"name":"Block Formatting","items":["Format"]},{"name":"Tools","items":["Source"]},"\/"]},"editorSupportsContentFiltering":true,"isXssSafe":false},"full_html":{"format":"full_html","editor":"ckeditor","editorSettings":{"allowedContent":true,"contentsCss":["http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/css\/ckeditor-iframe.css","http:\/\/sleeverary.mozo.kr\/core\/modules\/system\/css\/components\/align.module.css","http:\/\/sleeverary.mozo.kr\/core\/modules\/filter\/css\/filter.caption.css","http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/css\/plugins\/drupalimagecaption\/ckeditor.drupalimagecaption.css","http:\/\/sleeverary.mozo.kr\/core\/themes\/bartik\/css\/base\/elements.css","http:\/\/sleeverary.mozo.kr\/core\/themes\/bartik\/css\/components\/captions.css","http:\/\/sleeverary.mozo.kr\/core\/themes\/bartik\/css\/components\/table.css","http:\/\/sleeverary.mozo.kr\/core\/themes\/bartik\/css\/components\/text-formatted.css"],"customConfig":"","disableNativeSpellChecker":false,"disallowedContent":false,"drupalExternalPlugins":{"drupalimage":"http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/js\/plugins\/drupalimage\/plugin.js","drupalimagecaption":"http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/js\/plugins\/drupalimagecaption\/plugin.js","drupallink":"http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/js\/plugins\/drupallink\/plugin.js"},"drupalImageCaption_alignFilterEnabled":true,"drupalImageCaption_captionFilterEnabled":true,"drupalImageCaption_captionPlaceholderText":"Enter caption here","drupalImage_dialogTitleAdd":"Insert Image","drupalImage_dialogTitleEdit":"Edit Image","drupalLink_dialogTitleAdd":"Add Link","drupalLink_dialogTitleEdit":"Edit Link","entities":false,"extraPlugins":"drupalimage,drupalimagecaption,drupallink","format_tags":"p;h1;h2;h3;h4;h5;h6;pre","image2_alignClasses":["align-left","align-center","align-right"],"image2_captionedClass":"caption caption-img","justifyClasses":["text-align-left","text-align-center","text-align-right","text-align-justify"],"language":"ko","pasteFromWordPromptCleanup":true,"resize_dir":"vertical","stylesSet":false,"toolbar":[{"name":"Formatting","items":["Bold","Italic","Strike","Superscript","Subscript","-","RemoveFormat"]},{"name":"Linking","items":["DrupalLink","DrupalUnlink"]},{"name":"Lists","items":["BulletedList","NumberedList"]},{"name":"Media","items":["Blockquote","DrupalImage","Table","HorizontalRule"]},{"name":"Block Formatting","items":["Format"]},{"name":"Tools","items":["ShowBlocks","Source"]},"\/"]},"editorSupportsContentFiltering":true,"isXssSafe":false}}},"toolbar":{"breakpoints":{"toolbar.narrow":"only screen and (min-width: 16.5em)","toolbar.standard":"only screen and (min-width: 38.125em)","toolbar.wide":"only screen and (min-width: 61em)"},"subtreesHash":"tbqHmqd1ZOwz78qzP9vXXA0-xKj2mWPotedxou7J-go"},"user":{"uid":"1","permissionsHash":"1bfd7b3f8eca3499d9a2eaea450fc5c2626a405213df930d579b3a0eb21b4837"}}</script>
-<script src="http://sleeverary.mozo.kr/sites/default/files/js/js_BKcMdIbOMdbTdLn9dkUq3KCJfIKKo2SvKoQ1AnB8D-g.js"></script>
+  <script type="application/json" data-drupal-selector="drupal-settings-json">
+    {
+      "path": {
+        "baseUrl": "\/",
+        "scriptPath": null,
+        "pathPrefix": "",
+        "currentPath": "node\/add\/page",
+        "currentPathIsAdmin": true,
+        "isFront": false,
+        "currentLanguage": "ko"
+      },
+      "pluralDelimiter": "\u0003",
+      "ajaxPageState": {
+        "libraries": "adminimal_theme\/global-styling,big_pipe\/big_pipe,ckeditor\/drupal.ckeditor,ckeditor\/drupal.ckeditor.plugins.drupalimagecaption,classy\/base,classy\/messages,contextual\/drupal.contextual-links,contextual\/drupal.contextual-toolbar,core\/drupal.active-link,core\/drupal.autocomplete,core\/drupal.collapse,core\/drupal.date,core\/drupal.states,core\/html5shiv,core\/normalize,filter\/drupal.filter,menu_ui\/drupal.menu_ui,node\/drupal.node,path\/drupal.path,seven\/global-styling,seven\/node-form,shortcut\/drupal.shortcut,text\/drupal.text,toolbar\/toolbar,toolbar\/toolbar.escapeAdmin,tour\/tour,user\/drupal.user.icons",
+        "theme": "adminimal_theme",
+        "theme_token": "WjwquaFfS4KR_nphAsevDWOa6qqKTWJGVZcSSK581A0"
+      },
+      "ajaxTrustedUrl": {
+        "form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM": true
+      },
+      "jquery": {
+        "ui": {
+          "datepicker": {
+            "isRTL": false,
+            "firstDay": 0
+          }
+        }
+      },
+      "ckeditor": {
+        "timestamp": "piheqo"
+      },
+      "bigPipePlaceholderIds": {
+        "callback=Drupal%5CCore%5CRender%5CElement%5CStatusMessages%3A%3ArenderMessages\u0026args%5B0%5D\u0026token=_HAdUpwWmet0TOTe2PSiJuMntExoshbm1kh2wQzzzAA": true,
+        "callback=user.toolbar_link_builder%3ArenderToolbarLinks\u0026\u0026token=xssKdKFVFD7N0FUPPcC1C7LrqMHpQFVzUhrI4cOeEgs": true,
+        "callback=user.toolbar_link_builder%3ArenderDisplayName\u0026\u0026token=-MH2NzEnTzbzMk0ZGfGgoiw7G3j_-Q1ILWBRVhIOKLI": true
+      },
+      "editor": {
+        "formats": {
+          "basic_html": {
+            "format": "basic_html",
+            "editor": "ckeditor",
+            "editorSettings": {
+              "allowedContent": {
+                "*": {
+                  "attributes": "lang,dir",
+                  "styles": false,
+                  "classes": false
+                },
+                "a": {
+                  "attributes": "href,hreflang",
+                  "styles": false,
+                  "classes": false
+                },
+                "blockquote": {
+                  "attributes": "cite",
+                  "styles": false,
+                  "classes": false
+                },
+                "br": {
+                  "attributes": false,
+                  "styles": false,
+                  "classes": false
+                },
+                "cite": {
+                  "attributes": false,
+                  "styles": false,
+                  "classes": false
+                },
+                "code": {
+                  "attributes": false,
+                  "styles": false,
+                  "classes": false
+                },
+                "dd": {
+                  "attributes": false,
+                  "styles": false,
+                  "classes": false
+                },
+                "dl": {
+                  "attributes": false,
+                  "styles": false,
+                  "classes": false
+                },
+                "dt": {
+                  "attributes": false,
+                  "styles": false,
+                  "classes": false
+                },
+                "em": {
+                  "attributes": false,
+                  "styles": false,
+                  "classes": false
+                },
+                "h2": {
+                  "attributes": "id",
+                  "styles": false,
+                  "classes": false
+                },
+                "h3": {
+                  "attributes": "id",
+                  "styles": false,
+                  "classes": false
+                },
+                "h4": {
+                  "attributes": "id",
+                  "styles": false,
+                  "classes": false
+                },
+                "h5": {
+                  "attributes": "id",
+                  "styles": false,
+                  "classes": false
+                },
+                "h6": {
+                  "attributes": "id",
+                  "styles": false,
+                  "classes": false
+                },
+                "img": {
+                  "attributes": "src,alt,height,width,data-entity-type,data-entity-uuid,data-align,data-caption",
+                  "styles": false,
+                  "classes": false
+                },
+                "li": {
+                  "attributes": false,
+                  "styles": false,
+                  "classes": false
+                },
+                "ol": {
+                  "attributes": "start,type",
+                  "styles": false,
+                  "classes": false
+                },
+                "p": {
+                  "attributes": false,
+                  "styles": false,
+                  "classes": false
+                },
+                "span": {
+                  "attributes": false,
+                  "styles": false,
+                  "classes": false
+                },
+                "strong": {
+                  "attributes": false,
+                  "styles": false,
+                  "classes": false
+                },
+                "ul": {
+                  "attributes": "type",
+                  "styles": false,
+                  "classes": false
+                }
+              },
+              "contentsCss": ["http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/css\/ckeditor-iframe.css", "http:\/\/sleeverary.mozo.kr\/core\/modules\/system\/css\/components\/align.module.css",
+                "http:\/\/sleeverary.mozo.kr\/core\/modules\/filter\/css\/filter.caption.css", "http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/css\/plugins\/drupalimagecaption\/ckeditor.drupalimagecaption.css",
+                "http:\/\/sleeverary.mozo.kr\/core\/themes\/bartik\/css\/base\/elements.css", "http:\/\/sleeverary.mozo.kr\/core\/themes\/bartik\/css\/components\/captions.css",
+                "http:\/\/sleeverary.mozo.kr\/core\/themes\/bartik\/css\/components\/table.css", "http:\/\/sleeverary.mozo.kr\/core\/themes\/bartik\/css\/components\/text-formatted.css"
+              ],
+              "customConfig": "",
+              "disableNativeSpellChecker": false,
+              "disallowedContent": {
+                "*": {
+                  "attributes": "on*"
+                }
+              },
+              "drupalExternalPlugins": {
+                "drupalimage": "http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/js\/plugins\/drupalimage\/plugin.js",
+                "drupalimagecaption": "http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/js\/plugins\/drupalimagecaption\/plugin.js",
+                "drupallink": "http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/js\/plugins\/drupallink\/plugin.js"
+              },
+              "drupalImageCaption_alignFilterEnabled": true,
+              "drupalImageCaption_captionFilterEnabled": true,
+              "drupalImageCaption_captionPlaceholderText": "Enter caption here",
+              "drupalImage_dialogTitleAdd": "Insert Image",
+              "drupalImage_dialogTitleEdit": "Edit Image",
+              "drupalLink_dialogTitleAdd": "Add Link",
+              "drupalLink_dialogTitleEdit": "Edit Link",
+              "entities": false,
+              "extraPlugins": "drupalimage,drupalimagecaption,drupallink",
+              "format_tags": "p;h2;h3;h4;h5;h6",
+              "image2_alignClasses": ["align-left", "align-center", "align-right"],
+              "image2_captionedClass": "caption caption-img",
+              "justifyClasses": ["text-align-left", "text-align-center", "text-align-right", "text-align-justify"],
+              "language": "ko",
+              "pasteFromWordPromptCleanup": true,
+              "resize_dir": "vertical",
+              "stylesSet": false,
+              "toolbar": [{
+                "name": "Formatting",
+                "items": ["Bold", "Italic"]
+              }, {
+                "name": "Linking",
+                "items": ["DrupalLink", "DrupalUnlink"]
+              }, {
+                "name": "Lists",
+                "items": ["BulletedList", "NumberedList"]
+              }, {
+                "name": "Media",
+                "items": ["Blockquote", "DrupalImage"]
+              }, {
+                "name": "Block Formatting",
+                "items": ["Format"]
+              }, {
+                "name": "Tools",
+                "items": ["Source"]
+              }, "\/"]
+            },
+            "editorSupportsContentFiltering": true,
+            "isXssSafe": false
+          },
+          "full_html": {
+            "format": "full_html",
+            "editor": "ckeditor",
+            "editorSettings": {
+              "allowedContent": true,
+              "contentsCss": ["http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/css\/ckeditor-iframe.css", "http:\/\/sleeverary.mozo.kr\/core\/modules\/system\/css\/components\/align.module.css",
+                "http:\/\/sleeverary.mozo.kr\/core\/modules\/filter\/css\/filter.caption.css", "http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/css\/plugins\/drupalimagecaption\/ckeditor.drupalimagecaption.css",
+                "http:\/\/sleeverary.mozo.kr\/core\/themes\/bartik\/css\/base\/elements.css", "http:\/\/sleeverary.mozo.kr\/core\/themes\/bartik\/css\/components\/captions.css",
+                "http:\/\/sleeverary.mozo.kr\/core\/themes\/bartik\/css\/components\/table.css", "http:\/\/sleeverary.mozo.kr\/core\/themes\/bartik\/css\/components\/text-formatted.css"
+              ],
+              "customConfig": "",
+              "disableNativeSpellChecker": false,
+              "disallowedContent": false,
+              "drupalExternalPlugins": {
+                "drupalimage": "http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/js\/plugins\/drupalimage\/plugin.js",
+                "drupalimagecaption": "http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/js\/plugins\/drupalimagecaption\/plugin.js",
+                "drupallink": "http:\/\/sleeverary.mozo.kr\/core\/modules\/ckeditor\/js\/plugins\/drupallink\/plugin.js"
+              },
+              "drupalImageCaption_alignFilterEnabled": true,
+              "drupalImageCaption_captionFilterEnabled": true,
+              "drupalImageCaption_captionPlaceholderText": "Enter caption here",
+              "drupalImage_dialogTitleAdd": "Insert Image",
+              "drupalImage_dialogTitleEdit": "Edit Image",
+              "drupalLink_dialogTitleAdd": "Add Link",
+              "drupalLink_dialogTitleEdit": "Edit Link",
+              "entities": false,
+              "extraPlugins": "drupalimage,drupalimagecaption,drupallink",
+              "format_tags": "p;h1;h2;h3;h4;h5;h6;pre",
+              "image2_alignClasses": ["align-left", "align-center", "align-right"],
+              "image2_captionedClass": "caption caption-img",
+              "justifyClasses": ["text-align-left", "text-align-center", "text-align-right", "text-align-justify"],
+              "language": "ko",
+              "pasteFromWordPromptCleanup": true,
+              "resize_dir": "vertical",
+              "stylesSet": false,
+              "toolbar": [{
+                "name": "Formatting",
+                "items": ["Bold", "Italic", "Strike", "Superscript", "Subscript", "-", "RemoveFormat"]
+              }, {
+                "name": "Linking",
+                "items": ["DrupalLink", "DrupalUnlink"]
+              }, {
+                "name": "Lists",
+                "items": ["BulletedList", "NumberedList"]
+              }, {
+                "name": "Media",
+                "items": ["Blockquote", "DrupalImage", "Table", "HorizontalRule"]
+              }, {
+                "name": "Block Formatting",
+                "items": ["Format"]
+              }, {
+                "name": "Tools",
+                "items": ["ShowBlocks", "Source"]
+              }, "\/"]
+            },
+            "editorSupportsContentFiltering": true,
+            "isXssSafe": false
+          }
+        }
+      },
+      "toolbar": {
+        "breakpoints": {
+          "toolbar.narrow": "only screen and (min-width: 16.5em)",
+          "toolbar.standard": "only screen and (min-width: 38.125em)",
+          "toolbar.wide": "only screen and (min-width: 61em)"
+        },
+        "subtreesHash": "tbqHmqd1ZOwz78qzP9vXXA0-xKj2mWPotedxou7J-go"
+      },
+      "user": {
+        "uid": "1",
+        "permissionsHash": "1bfd7b3f8eca3499d9a2eaea450fc5c2626a405213df930d579b3a0eb21b4837"
+      }
+    }
+  </script>
+  <script src="http://sleeverary.mozo.kr/sites/default/files/js/js_BKcMdIbOMdbTdLn9dkUq3KCJfIKKo2SvKoQ1AnB8D-g.js"></script>
 
-<!--[if lte IE 9]>
+  <!--[if lte IE 9]>
 <script src="http://sleeverary.mozo.kr/sites/default/files/js/js_VhqXmo4azheUjYC30rijnR_Dddo0WjWkF27k5gTL8S4.js"></script>
 <![endif]-->
-<script src="http://sleeverary.mozo.kr/sites/default/files/js/js_t3GYtz-_cmxpltCCuayu-Yo89GO5ZGQUZOpytZXEktE.js"></script>
-<script src="http://sleeverary.mozo.kr/core/assets/vendor/ckeditor/ckeditor.js?v=4.10.1"></script>
-<script src="http://sleeverary.mozo.kr/sites/default/files/js/js_Vnu5sfVBAXlv1wB6FSWSRS-qH4LaHJzUEdRyax3pWwE.js"></script>
+  <script src="http://sleeverary.mozo.kr/sites/default/files/js/js_t3GYtz-_cmxpltCCuayu-Yo89GO5ZGQUZOpytZXEktE.js"></script>
+  <script src="http://sleeverary.mozo.kr/core/assets/vendor/ckeditor/ckeditor.js?v=4.10.1"></script>
+  <script src="http://sleeverary.mozo.kr/sites/default/files/js/js_Vnu5sfVBAXlv1wB6FSWSRS-qH4LaHJzUEdRyax3pWwE.js"></script>
 
-<script type="application/vnd.drupal-ajax" data-big-pipe-event="start"></script>
-    <script type="application/vnd.drupal-ajax" data-big-pipe-replacement-for-placeholder-with-id="callback=user.toolbar_link_builder%3ArenderDisplayName&amp;&amp;token=-MH2NzEnTzbzMk0ZGfGgoiw7G3j_-Q1ILWBRVhIOKLI">
+  <script type="application/vnd.drupal-ajax" data-big-pipe-event="start"></script>
+  <script type="application/vnd.drupal-ajax" data-big-pipe-replacement-for-placeholder-with-id="callback=user.toolbar_link_builder%3ArenderDisplayName&amp;&amp;token=-MH2NzEnTzbzMk0ZGfGgoiw7G3j_-Q1ILWBRVhIOKLI">
     [{"command":"insert","method":"replaceWith","selector":"[data-big-pipe-placeholder-id=\u0022callback=user.toolbar_link_builder%3ArenderDisplayName\u0026\u0026token=-MH2NzEnTzbzMk0ZGfGgoiw7G3j_-Q1ILWBRVhIOKLI\u0022]","data":"builder","settings":null}]
-    </script>    <script type="application/vnd.drupal-ajax" data-big-pipe-replacement-for-placeholder-with-id="callback=user.toolbar_link_builder%3ArenderToolbarLinks&amp;&amp;token=xssKdKFVFD7N0FUPPcC1C7LrqMHpQFVzUhrI4cOeEgs">
+    </script>
+  <script type="application/vnd.drupal-ajax" data-big-pipe-replacement-for-placeholder-with-id="callback=user.toolbar_link_builder%3ArenderToolbarLinks&amp;&amp;token=xssKdKFVFD7N0FUPPcC1C7LrqMHpQFVzUhrI4cOeEgs">
     [{"command":"insert","method":"replaceWith","selector":"[data-big-pipe-placeholder-id=\u0022callback=user.toolbar_link_builder%3ArenderToolbarLinks\u0026\u0026token=xssKdKFVFD7N0FUPPcC1C7LrqMHpQFVzUhrI4cOeEgs\u0022]","data":"\u003Cul class=\u0022toolbar-menu\u0022\u003E\u003Cli class=\u0022account\u0022\u003E\u003Ca href=\u0022\/user\u0022 title=\u0022\uc0ac\uc6a9\uc790 \uacc4\uc815\u0022\u003EView profile\u003C\/a\u003E\u003C\/li\u003E\u003Cli class=\u0022account-edit\u0022\u003E\u003Ca href=\u0022\/user\/1\/edit\u0022 title=\u0022Edit user account\u0022\u003EEdit profile\u003C\/a\u003E\u003C\/li\u003E\u003Cli class=\u0022logout\u0022\u003E\u003Ca href=\u0022\/user\/logout\u0022\u003E\ub85c\uadf8\uc544\uc6c3\u003C\/a\u003E\u003C\/li\u003E\u003C\/ul\u003E","settings":null}]
-    </script>    <script type="application/vnd.drupal-ajax" data-big-pipe-replacement-for-placeholder-with-id="callback=Drupal%5CCore%5CRender%5CElement%5CStatusMessages%3A%3ArenderMessages&amp;args%5B0%5D&amp;token=_HAdUpwWmet0TOTe2PSiJuMntExoshbm1kh2wQzzzAA">
+    </script>
+  <script type="application/vnd.drupal-ajax" data-big-pipe-replacement-for-placeholder-with-id="callback=Drupal%5CCore%5CRender%5CElement%5CStatusMessages%3A%3ArenderMessages&amp;args%5B0%5D&amp;token=_HAdUpwWmet0TOTe2PSiJuMntExoshbm1kh2wQzzzAA">
     [{"command":"insert","method":"replaceWith","selector":"[data-big-pipe-placeholder-id=\u0022callback=Drupal%5CCore%5CRender%5CElement%5CStatusMessages%3A%3ArenderMessages\u0026args%5B0%5D\u0026token=_HAdUpwWmet0TOTe2PSiJuMntExoshbm1kh2wQzzzAA\u0022]","data":"","settings":null}]
     </script>
-<script type="application/vnd.drupal-ajax" data-big-pipe-event="stop"></script>
+  <script type="application/vnd.drupal-ajax" data-big-pipe-event="stop"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/web-animations-js@2.3.1/web-animations.min.js"></script>
+  <script src="https://unpkg.com/hammerjs@2.0.8/hammer.min.js"></script>
+  <script src="https://unpkg.com/muuri@0.7.1/dist/muuri.min.js"></script>
+  <script src="../js/admin_collection.js"></script>
+ 
 </body>
+
 </html>

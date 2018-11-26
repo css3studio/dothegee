@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.layout-region-node-secondary{position:fixed;right:20px;top:180px}
+
+.field--section-unit{padding:15px;background-color:#ddd;margin-bottom:30px;position:relative}
+.field--section-unit dl.section_title{margin-bottom:10px}
+.field--section-unit dl.section_title dt{font-size:18px;font-weight:500;display:inline}
+.field--section-unit dl.section_title dd{display:inline}
+.field--section-unit .section-wrapper{background-color:#eee;padding:10px;min-height:100px}
+.field--section-unit .section-title-area{border-bottom:1px solid #ccc;padding-bottom:15px;margin-bottom:15px}
+.field--section-unit .section-title-area label{position:absolute;text-indent:-9999px}
+.field--section-unit .section-title-area input[type=text]{width:100%}
+.field--section-unit .close-section{position:absolute;right:15px;top:15px;font-size:20px;cursor:pointer}
+
+.field--section-unit-0 .close-section{display:none}
+
+.field--section-unit.on-focus{border:1px solid blue;box-sizing:border-box}
+
+.section-wrapper.grid{position:relative}
+.section-wrapper.grid .form-item{display:block;position:absolute;z-index:1;width:98%;margin:5px 1% 5px}
+.section-wrapper.grid .form-item label{position:absolute;text-indent:-9999px}
+.section-wrapper.grid .form-item .item-content{width:92%;float:left}
+.section-wrapper.grid .form-item .item-control{width:7%;float:left;margin-left:1%;padding:0.3em 0}
+.section-wrapper.grid .form-item .item-control a{font-size:20px}
+.section-wrapper.grid .form-item .item-control a.item-move{cursor:move}
+.section-wrapper.grid .form-item input[type=text]{width:100%}
+.form-item.muuri-item-dragging{z-index:10}
+.form-item.muuri-item-releasing{z-index:2}
+.form-item.muuri-item-hidden{z-index:0}
+.section-wrapper.grid .item-content{position:relative;width:100%;height:100%}
+
+.item-palette h3{padding:10px;margin:0}
+.item-palette .item-palette-one{display:inline-block}
+.item-palette .item-garage{display:none}
+
+.add--section-unit{overflow:hidden}
+.add--section-unit dl{float:left}
+.add--section-unit button{float:right}
