@@ -2,7 +2,7 @@
 
 .layout-region-node-secondary{position:fixed;right:20px;top:180px}
 
-.field--section-unit{padding:15px;background-color:#ddd;margin-bottom:30px;position:relative}
+.field--section-unit{padding:15px;background-color:#ddd;border:1px solid #ddd;margin-bottom:30px;position:relative;box-sizing:border-box}
 .field--section-unit dl.section_title{margin-bottom:10px}
 .field--section-unit dl.section_title dt{font-size:18px;font-weight:500;display:inline}
 .field--section-unit dl.section_title dd{display:inline}
@@ -30,9 +30,25 @@
 .section-wrapper.grid .item-content{position:relative;width:100%;height:100%}
 
 .item-palette h3{padding:10px;margin:0}
-.item-palette .item-palette-one{display:inline-block}
+.item-palette .item-palette-one{display:inline-block;margin:0 5px 5px 0}
 .item-palette .item-garage{display:none}
 
 .add--section-unit{overflow:hidden}
 .add--section-unit dl{float:left}
 .add--section-unit button{float:right}
+
+/* items */
+.box01{border:1px solid #ccc;padding:5px}
+.box01 p{margin:0 0 5px}
+.box01 input[type=text]{width:100%}
+.box01 textarea{height:80px;width:100%}
+.box01_01{background-color:#fff;overflow:hidden}
+.box01_01 .thumb{float:left;width:20%;min-height:100px;text-align:center;overflow:hidden;background-color:#ccc}
+.box01_01 .thumb img{height:100%}
+.box01_01 .contA{float:right;width:78%;}
+
+.field--section-unit .list01{background-color:#fff;border:1px solid #ccc;padding:5px;box-sizing:border-box}
+.field--section-unit .list01 ul{margin:0;padding-left:15px}
+.field--section-unit .list01 ul li{margin:0 0 5px;padding:0}
+.field--section-unit .list01 ul li input{width:94% !important}
+.field--section-unit .list01 ul li .control{display:inline-block}
